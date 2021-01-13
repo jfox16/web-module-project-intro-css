@@ -1,10 +1,140 @@
+
 html {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 62.5%;
+  text-align: center;
 }
 
-.icon {
-  width: 200px;
+header {
+  margin-top: 20px;
 }
 
-.picture {
-  width: 400px;
+header h1 {
+  font-family: 'Chelsea Market', cursive;
+  font-size: 4.5rem;
+}
+
+header p {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+footer {
+  background-color: #F9E7DC;
+}
+
+h1 {
+  margin: 5% 0;
+}
+
+p {
+  margin: 2% 0;
+  font-size: 1.3rem;
+}
+
+b {
+  font-weight: bold;
+}
+
+nav a {
+  border-radius: 12px;
+  color: white;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 1.5% 3.5%;
+  padding: 8px 8px;
+  width: 9%;
+  transition: all ease 0.15s;
+}
+
+nav a:hover {
+  animation: 0.5s ease 1 expand-bounce;
+  transform: scale(1.2);
+}
+
+.icon-section {
+  width: 20%;
+  margin: 5% auto;
+}
+
+.icon-section img {
+  width: 40%;
+  margin: auto;
+  animation: 3s linear infinite wiggle;
+}
+
+.icon-section p {
+  font-size: 1.2em;
+}
+
+.orange-bg {
+  background-color: #FF764E;
+}
+
+.lightblue-bg {
+  background-color: #5ED3EB;
+}
+
+.yellow-bg {
+  background-color: #FFCD69;
+}
+
+#header-div {
+  display: inline-block;
+  width: 600px;
+}
+
+#header-img {
+  border-radius: 50%;
+  display: inline-block;
+  width: 18%;
+}
+
+#header-third-line {
+  margin: auto;
+  width: 350px;
+}
+
+#main-section {
+  background-color: #DDB9A3;
+  color: white;
+  margin: 3%;
+  padding: 1% 1%;
+}
+
+#footer-img-div {
+  width: 100%;
+  height: 240px;
+  background-image: url("./assets/footer_img.jpg");
+  background-size: cover;
+  background-position-y: 20%;
+}
+
+#car-icon {
+  animation: 0.18s linear infinite puttputt;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); } 
+  2% { transform: rotate(10deg); } 
+  6% { transform: rotate(-10deg); } 
+  10% { transform: rotate(10deg); } 
+  14% { transform: rotate(-10deg); } 
+  18% { transform: rotate(10deg); } 
+  22% { transform: rotate(-10deg); } 
+  24% { transform: rotate(0deg); }
+}
+
+@keyframes puttputt {
+  0% { transform: translateY(0) scaleX(1) scaleY(1); }
+  50% { transform: translateY(-1px) scaleX(0.98) scaleY(1.03); }
+  0% { transform: translateY(0) scaleX(1) scaleY(1); }
+}
+
+@keyframes expand-bounce {
+  0% { transform: scale(1) }
+  25% { transform: scale(1.4) }
+  50% { transform: scale(1.15) }
+  75% { transform: scale(1.22) }
+  100% { transform: scale(1.2) }
 }
